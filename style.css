@@ -1,0 +1,177 @@
+:root {
+    --clr-header-bg: #F5F5F5;
+    --clr-main-bg: #FFFFFF;
+    --clr-text: #2B283A;
+    --clr-btn-bg: #3770ED;
+    --clr-btn-text: #FDFDFD;
+    --clr-border: #D5D4D8;
+    --clr-title-text: #4A4E74;
+    --clr-dollar: #918E9B;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--clr-text);
+    text-align: center;
+    background: #1C1C1C;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h5, p {
+    font-size: 11px;
+    color: var(--clr-title-text);
+    opacity: 0.9;
+}
+
+/* Utility */
+
+.dollar-symbol {
+    font-weight: 400;
+    color: var(--clr-dollar);
+}
+
+/* Container */
+
+.container {
+    max-width: 450px;
+    /* TODO: change margin to 1.5em post dev */
+    margin: 0em auto;
+}
+
+/* Header */
+
+header {
+    padding: 3em 1em;
+    background-color: var(--clr-header-bg);
+}
+
+header h1 {
+    margin-bottom: 0.1em;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+header h3 {
+    font-size: 0.75rem;    
+    font-weight: 400;
+}
+
+/* Main */
+
+main {
+    background: var(--clr-main-bg);
+    padding: 1.5em 1em;
+}
+
+.select-task {
+    font-size: 0.75rem;
+    font-family: inherit;
+    margin: 1em 0.5em;
+    padding: 0.8em 1.2em;
+    background-color: var(--clr-main-bg);
+    border: 1.5px solid var(--clr-border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.select-task:hover,
+.select-task:focus {
+    background-color: var(--clr-header-bg);
+}
+
+.task-list {
+    margin-top: 1.5em;
+}
+
+.task-header, 
+.task-items, 
+.task-item, 
+.total-header, 
+.total-desc {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+
+.task-items {
+    flex-wrap: wrap;
+    margin: 1.2em 0;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--clr-border);
+}
+
+.task-item {
+    flex: 1 0 100%;
+    padding: 0.6em 0;
+}
+
+.remove-task {
+    background: none;
+    outline: none;
+    border: none;
+    margin-left: 0.5em;
+    font-size: 8px;
+    font-family: inherit;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+.remove-task:hover {
+    color: var(--clr-title-text);
+}
+
+.amount{
+    margin-left: auto;
+}
+
+.total-desc p:nth-child(1) {
+    margin: 1.5em 0;
+}
+
+.total-desc p:nth-child(2) {
+    margin: 0.5em 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+/* Button */
+
+.send-invoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    margin: 1em auto;
+    padding: 0.8em;
+
+    border: none;
+    border-radius: 5px;
+    background: var(--clr-btn-bg);
+    color: var(--clr-btn-text);
+
+    font-family: inherit;
+    font-size: 0.75rem;
+
+    cursor: pointer;
+}
+
+.send-invoice:hover,
+.send-invoice:focus {
+    background: #2464ee;
+}
+
+.send-invoice img {
+    margin-right: 0.3em;
+}
+

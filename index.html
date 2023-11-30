@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Invoice creator</h1>
+            <h3>Thanks for choosing GoodCorp, LLC!</h3>
+        </header>
+        <main>
+            <section class="task-selection">
+                <button class="select-task">Wash Car: $10</button>
+                <button class="select-task">Mow Lawn: $20</button>
+                <button class="select-task">Pull Weeds: $30</button>
+            </section>
+    
+            <section class="task-list">
+                <div class="task-header">
+                    <h5>TASK</h5>
+                    <h5>TOTAL</h5>
+                </div>
+                <div class="task-items">
+                    <div class="task-item">
+                        <h2 class="task-title">Wash Car</h2>
+                        <button class="remove-task">Remove</button>
+                        <h2 class="amount"><span class="dollar-symbol">$</span><span>10</span></h2>
+                    </div>
+                    <div class="task-item">
+                        <h2 class="task-title">Wash Car</h2>
+                        <button class="remove-task">Remove</button>
+                        <h2 class="amount"><span class="dollar-symbol">$</span><span>10</span></h2>
+                    </div>
+                    <div class="task-item">
+                        <h2 class="task-title">Wash Car</h2>
+                        <button class="remove-task">Remove</button>
+                        <h2 class="amount"><span class="dollar-symbol">$</span><span>10</span></h2>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="total">
+                <div class="total-header">
+                    <h5>NOTES</h5>
+                    <h5>TOTAL AMOUNT</h5>
+                </div>
+                <div class="total-desc">
+                    <p>We accept cash, credit card, or PayPal</p>
+                    <p><span class="dollar-symbol">$</span><span class="total-amount">60</span></p>
+                </div>
+            </section>
+            <button class="send-invoice">
+                <img src="./Images/mail-icon.svg" alt="email-icon">
+                Send invoice
+            </button>
+        </main>
+    </div>
+</body>
+</html>
