@@ -43,8 +43,7 @@ h5, p {
 
 .container {
     max-width: 450px;
-    /* TODO: change margin to 1.5em post dev */
-    margin: 0em auto;
+    margin: 2.5em auto;
 }
 
 /* Header */
@@ -78,7 +77,7 @@ main {
     margin: 1em 0.5em;
     padding: 0.8em 1.2em;
     background-color: var(--clr-main-bg);
-    border: 1.5px solid var(--clr-border);
+    border: 2px solid var(--clr-border);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -86,6 +85,7 @@ main {
 .select-task:hover,
 .select-task:focus {
     background-color: var(--clr-header-bg);
+    border: 2px solid #000;
 }
 
 .task-list {
@@ -129,7 +129,7 @@ main {
     color: var(--clr-title-text);
 }
 
-.amount{
+.amount-wrap{
     margin-left: auto;
 }
 

@@ -28,23 +28,7 @@
                     <h5>TASK</h5>
                     <h5>TOTAL</h5>
                 </div>
-                <div class="task-items">
-                    <div class="task-item">
-                        <h2 class="task-title">Wash Car</h2>
-                        <button class="remove-task">Remove</button>
-                        <h2 class="amount"><span class="dollar-symbol">$</span><span>10</span></h2>
-                    </div>
-                    <div class="task-item">
-                        <h2 class="task-title">Wash Car</h2>
-                        <button class="remove-task">Remove</button>
-                        <h2 class="amount"><span class="dollar-symbol">$</span><span>10</span></h2>
-                    </div>
-                    <div class="task-item">
-                        <h2 class="task-title">Wash Car</h2>
-                        <button class="remove-task">Remove</button>
-                        <h2 class="amount"><span class="dollar-symbol">$</span><span>10</span></h2>
-                    </div>
-                </div>
+                <div class="task-items"></div>
             </section>
     
             <section class="total">
@@ -54,7 +38,7 @@
                 </div>
                 <div class="total-desc">
                     <p>We accept cash, credit card, or PayPal</p>
-                    <p><span class="dollar-symbol">$</span><span class="total-amount">60</span></p>
+                    <p><span class="dollar-symbol">$</span><span id="total-amount">0</span></p>
                 </div>
             </section>
             <button class="send-invoice">
@@ -63,5 +47,7 @@
             </button>
         </main>
     </div>
+
+    <script src="./app.js"></script>
 </body>
 </html>
