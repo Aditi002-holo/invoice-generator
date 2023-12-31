@@ -6,9 +6,12 @@ let totalAmount = 0
 
 taskButtons.forEach(eachTaskButton => {
     eachTaskButton.addEventListener('click', function() {
+        eachTaskButton.disabled = true
         let btnContent = eachTaskButton.textContent
+
         let indexOfColon = btnContent.indexOf(':')
         let taskName = btnContent.slice(0,indexOfColon)
+
         let amount = btnContent.slice(-2)
 
         taskItems.innerHTML += `
@@ -23,5 +26,15 @@ taskButtons.forEach(eachTaskButton => {
 
         totalAmount += parseInt(amount)
         totalAmountEl.textContent = totalAmount
+
+        document.querySelectorAll('.remove-task').forEach(eachRemoveBtn => {
+            eachRemoveBtn.addEventListener('click', () => {
+                let amount = parseInt(eachRemoveBtn.nextElementSibling.children[1].textContent)
+                eachRemoveBtn.parentNode.remove()
+
+                totalAmount -= amount
+                totalAmountEl.textContent = totalAmount
+            })
+        })
     })
 })
